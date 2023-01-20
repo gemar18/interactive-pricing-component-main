@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive pricing component</title>
+</head>
+<body>
+  <main>
+    <header>
+      <img src="images/pattern-circles.svg" alt="pattern-circles" srcset="">
+      <h1>Simple, traffic-based pricing</h1>
+      <p> Sign-up for our 30-day trial. No credit card required.</p>
+    </header>
+    <section>
+      <div class="paviews" id="paviews">
+        <h2 id="pageviews">100k Pageviews</h2>
+        <div class="price" id="price">
+          <p class="pricing" id="pricing">$16.00</p>
+          <span>/month</span>
+        </div>
+      </div>
+      <div class="container-input">
+        <input type="range" id="price-slider" min="0" max="4" value="2">
+      </div>
+      <div class="container-time">
+        <p>Monthly Billing</p>
+        <label class="monthly" id="monthly" >
+        <input type="checkbox" id="billing" name="time"></label>
+        <p class="yearly"> Yearly Billing </p>
+        <div class="discount" id="discount">
+          <p> 25% discount</p>
+        </div>
+      </div>
+      </div>
+      <div class="containerbtn">
+        <ul>
+          <li> <img src="./images/icon-check.svg" alt="check-icon" />
+            Unlimited websites</li>
+          <li>
+            <img src="./images/icon-check.svg" alt="check-icon" />
+            100% data ownership</li>
+          <li>
+            <img src="./images/icon-check.svg" alt="check-icon" />
+            Email reports
+          </li>
+        </ul>
+        <button type="submit" class="btn"> Start my trial</button>
+      </div>
+    </section>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">gemar18</a>.
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

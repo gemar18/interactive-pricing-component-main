@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+:root {
+  --SoftCyan: hsl(174, 77%, 80%);
+  --StrongCyan: hsl(174, 86%, 45%);
+  --LightGrayishRed: hsl(14, 92%, 95%);
+  --LightRed: hsl(15, 100%, 70%);
+  --PaleBlue: hsl(226, 100%, 87%);
+  --White: hsl(0, 0%, 100%);
+  --VeryPaleBlue: hsl(230, 100%, 99%);
+  --LightGrayishBluep: hsl(224, 65%, 95%);
+  --LightGrayishBlue: hsl(223, 50%, 87%);
+  --GrayishBlue: hsl(225, 20%, 60%);
+  --DarkDesaturatedBl-e: hsl(227, 35%, 25%);
+}
+
+body {
+  background: url("images/bg-pattern.svg") no-repeat, var(--VeryPaleBlue);
+  font-family: 'Manrope', sans-serif;
+  font-size: 15px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  width: 550px;
+  margin: 0 auto;
+}
+
+header {
+  width: 425px;
+  position: relative;
+  margin-top: 65px;
+}
+
+header img {
+  position: absolute;
+  top: -38px;
+  left: 27%;
+}
+
+
+h1 {
+  font-size: 27px;
+  color: var(--DarkDesaturatedBl-e);
+}
+
+header p {
+  margin-top: 18px;
+  color: var(--GrayishBlue);
+  font-weight: 600;
+}
+
+section {
+  width: 545px;
+  background-color: var(--White);
+  padding: 50px 50px 30px;
+  border-radius: 10px;
+  box-shadow: 0 3px 16px var(--LightGrayishBluep);
+  margin-top: 100px;
+}
+
+
+h2 {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--GrayishBlue);
+  letter-spacing: 1px;
+}
+
+.paviews {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  align-items: center;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+}
+
+.price p {
+  font-size: 38px;
+  margin-right: 2px;
+  color: var(--DarkDesaturatedBl-e);
+}
+
+.price span {
+  font-size: 15px;
+  color: var(--GrayishBlue);
+}
+
+.container-input {
+  display: block;
+  margin-top: 45px;
+  position: relative;
+}
+
+#price-slider {
+  width: 100%;
+  appearance: none;
+  outline: none;
+  border-radius: 5px;
+  height: 10px;
+  background: linear-gradient(
+    to right,
+    hsl(174, 77%, 80%) 0%,
+    hsl(174, 77%, 80%) 50%,
+    hsl(224, 65%, 95%) 0%,
+    hsl(224, 65%, 95%) 100%
+  );
+}
+
+#price-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: var(--StrongCyan);
+  background-image: url("images/icon-slider.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0px 7px 10px 4px rgba(16, 213, 194, 0.2);
+}
+
+#price-slider::-webkit-slider-thumb:hover {
+  background-color:var(--SoftCyan);
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.container-time {
+  margin-top: 40px;
+  display: flex;
+  margin-left: 150px;
+  flex-direction: row;
+  justify-content: space-between;
+  color: var(--GrayishBlue);
+  font-weight: 800;
+}
+
+.monthly{
+  position: relative;
+  cursor: pointer;
+  width: 50px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: var(--LightGrayishBlue);
+}
+
+#billing{
+appearance: none;
+  position: absolute;
+  background-color:var(--White);
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  left: 3px;
+  top: 3px;
+}
+
+:checked {
+  transform: translateX(29px);
+}
+
+.monthly:hover {
+background-color: var(--SoftCyan);
+}
+
+.discount {
+  width: 80px;
+  height: 20px;
+  border-radius: 30px;
+  border: none;
+  background-color: var(--LightGrayishRed);
+  font-weight: 800;
+}
+
+.discount p {
+  font-size: 10px;
+  color: var(--LightRed);
+  width: 65px;
+  margin: 3px auto;
+}
+
+.containerbtn {
+  border-top: 2px solid var(--LightGrayishBlue);
+  margin-top: 75px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.containerbtn img {
+  margin-right: 15px;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 14px;
+}
+
+ul li {
+  margin: 10px 0;
+  color: var(--GrayishBlue);
+  font-weight: 800;
+}
+
+.containerbtn button {
+  width: 175px;
+  height: 40px;
+  background-color: hsl(227, 35%, 25%);
+  color: #fff;
+  font-family: inherit;
+  border: 2px solid hsl(227, 35%, 25%);
+  border-radius: 30px;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.containerbtn button:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: hsl(227, 35%, 25%);
+}
+
+.attribution {
+  margin-top: 30px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+
+
+
+
+
